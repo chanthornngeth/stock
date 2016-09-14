@@ -1,0 +1,7 @@
+-
+  name: 'Default'
+  uriPattern: ''
+  defaults:
+    '@package': 'MY.Stock'
+    '@controller': 'Buyer'
+    '@action': 'index'
