@@ -1,0 +1,25 @@
+<f:layout name="Default" />
+
+<f:section name="Title">A list of buyers</f:section>
+
+<f:section name="Content">
+    <f:if condition="{buyers}">
+        <f:then>
+            <ul>
+                <f:for each="{buyers}" as="buyer">
+                    <li>
+                        <f:link.action action="show" arguments="{buyer: buyer}">{buyer.name}</f:link.action>
+                        <f:link.action action="edit" arguments="{buyer: buyer}">Edit</f:link.action>
+                        <f:form action="delete" arguments="{buyer: buyer}">
+                            <f:form.submit value="Delete" />
+                        </f:form>
+                    </li>
+                </f:for>
+            </ul>
+        </f:then>
+        <f:else>
+            <p>No buyers created yet.</p>
+        </f:else>
+    </f:if>
+    <p><f:link.action action="new">Create a new buyer</f:link.action></p>
+</f:section>
