@@ -7,7 +7,6 @@ namespace MY\Stock\Domain\Model;
 
 use TYPO3\Flow\Annotations as Flow;
 use Doctrine\ORM\Mapping as ORM;
-use MY\Stock\Domain\Model\Invoice;
 
 /**
  * @Flow\Entity
@@ -26,7 +25,7 @@ class Booked
     protected $bookDate;
 
     /**
-     * @var \My\Stock\Domain\Model\Invoice
+     * @var Invoice
      * @ORM\ManyToOne(inversedBy="books")
      */
     protected $invoice;

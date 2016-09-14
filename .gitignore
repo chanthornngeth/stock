@@ -1,8 +1,10 @@
 /Build/
 /Configuration/
 /Data/
-/Packages/*
-!/Packages/Application/MY.Stock/
+/Packages/Framework/
+/Packages/Libraries/
+/Packages/Application/*
+!/Packages/Application/MY.Stock
 /Web/
 /bin/
 /Readme.rst
